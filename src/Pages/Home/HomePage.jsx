@@ -1,10 +1,13 @@
 import React from "react";
 import Countdown from "../../components/Countdown";
 import NewCountdown from "../../components/NewCountdown";
+import '../../assets/fonts/fonts.css'; // Import custom fonts
+import './HomePage.css'; // Import custom styles for HomePage
+
 
 const HomePage = () => {
   return (
-    <div className="home-page">
+    <div  className="home-page font-telenor">
       <section className="bg-[url('/HeaderBGBack.jpg')] bg-cover bg-center py-10 flex flex-col items-center justify-center">
         <div className="headerBg flex flex-col justify-center rounded-4xl py-20 px-12 w-full max-w-7xl shadow inset-shadow-black ">
           <img
@@ -21,10 +24,10 @@ const HomePage = () => {
             <div className="Watch  flex justify-center ">
               <div className="px-10 py-2 bg-white ring-1 ring-cyan-800 rounded-4xl flex justify-center items-center">
                 <h3 className="mr-4 font-medium">Watch live on</h3>
-                <a href="#">
+                <a href="#" className="cursor-pointer">
                   <img className="w-10" src="/youtube-logo-hd.png" alt="youtube-logo-hd.png" />
                 </a>
-                <a href="#">
+                <a href="#" className="cursor-pointer">
                   <img className="w-15" src="/Facebook-logo.png" alt="Facebook-logo.png" />
                 </a>
               </div>
