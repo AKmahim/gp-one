@@ -112,3 +112,61 @@
   }
 }
 
+/* countdown style  start  */
+.timer {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-between;
+  /* align-items: center; */
+  gap: 0rem;
+  overflow: hidden;
+  width: 400px;
+  text-align: center;
+}
+.timer .colon {
+  /* width: 8px; */
+  padding: 0 10px;
+  padding-top: 10px;
+
+  color: #000;
+  font-size: 36px;
+}
+.timer .item {
+  text-align: center;
+  width: 100%;
+  height: fit-content;
+}
+.timer .item .days,
+.timer .item .hours,
+.timer .item .minutes,
+.timer .item .seconds {
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  padding: 15px 0;
+  border-radius: 14px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.timer .item .day,
+.timer .item .hour,
+.timer .item .min,
+.timer .item .sec {
+  text-align: center;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.timer .item .day span,
+.timer .item .hour span,
+.timer .item .min span,
+.timer .item .sec span {
+  /* height: 40px; */
+  color: #000;
+  font-size: 32px;
+  font-weight: 700;
+  display: inline-block;
+}
