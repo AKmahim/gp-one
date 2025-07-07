@@ -56,14 +56,14 @@ const HomePage = () => {
             </div>
           </div> */}
 
-          <div className="bg-gradient-to-tr from-gray-200 to-transparent bg-white flex flex-col items-center p-1 rounded-3xl">
-            <div className="eventCard bg-white flex flex-col items-center px-20 py-16 rounded-3xl">
+          <div className="eventCardWraper bg-gradient-to-tr from-gray-200 to-transparent bg-white flex flex-col items-center p-1 rounded-3xl">
+            <div className="eventCard bg-white flex flex-col items-center px-20 py-16 ">
               <h3 className="mb-6 font-medium">Event Keynote</h3>
               <button className="btn-grad text-lg ">Stay Tuned</button>
             </div>
           </div>
-          <div className="bg-gradient-to-tr from-gray-12`00 to-transparent bg-white flex flex-col items-center p-1 rounded-3xl">
-            <div className="eventCard bg-white flex flex-col items-center px-20 py-16 rounded-3xl">
+          <div className="eventCardWraper bg-gradient-to-tr from-gray-12`00 to-transparent bg-white flex flex-col items-center p-1 rounded-3xl">
+            <div className="eventCard bg-white flex flex-col items-center px-20 py-16 ">
               <h3 className="mb-6 font-medium">New Plaltforms</h3>
               <button className="btn-grad text-lg ">Stay Tuned</button>
             </div>
