@@ -81,9 +81,16 @@ const HomePage = () => {
           />
         </div>
         <div className="events flex justify-center items-center w-full max-w-1/2 gap-10 pt-20">
-          <button class="border-3 font-medium px-6 py-2 rounded-4xl shadow-lg">
+          {/* <button class="border-3 font-medium px-6 py-2 rounded-4xl shadow-lg">
             Visit Now
+          </button> */}
+          <button className="relative px-8 py-4 rounded-full font-medium text-black shadow-[0_4px_4px_rgba(0,0,0,0.25)] group">
+            <span className="absolute inset-0 rounded-full p-[3px] bg-gradient-to-r from-[#172BD1] to-[#580084] group-hover:from-[#580084] group-hover:to-[#172BD1]">
+              <span className="block h-full w-full rounded-full bg-white group-hover:bg-gray-50"></span>
+            </span>
+            <span className="relative z-10 text-[#000040] text-xl">Visit now</span>
           </button>
+
         </div>
       </section>
     </div>
