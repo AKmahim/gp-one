@@ -21,8 +21,9 @@ const HomePage = () => {
               {/* <Countdown /> */}
               <NewCountdown />
             </div>
+            {/* Watch live on link list  */}
             <div className="Watch  flex justify-center ">
-              <div className="px-10 py-2 bg-white ring-1 ring-cyan-800 rounded-4xl flex justify-center items-center">
+              <div className="px-10 py-2 bg-white ring-1 ring-cyan-800 rounded-4xl flex justify-center items-center ">
                 <h3 className="mr-4 font-medium">Watch live on</h3>
                 <a href="#" className="cursor-pointer">
                   <img className="w-10" src="/youtube-logo-hd.png" alt="youtube-logo-hd.png" />
