@@ -1,5 +1,6 @@
 import React from "react";
 import Countdown from "../../components/Countdown";
+import NewCountdown from "../../components/NewCountdown";
 
 const HomePage = () => {
   return (
@@ -13,7 +14,10 @@ const HomePage = () => {
           />
           <div className="CountDown text-center pt-6">
             <h2 className="text-3xl py-2">Event goes live in</h2>
-            <div className="countdown bg-black">{/* <Countdown /> */}</div>
+            <div className="text-black">
+              {/* <Countdown /> */}
+              <NewCountdown />
+            </div>
             <div className="Watch  flex justify-center ">
               <div className="px-10 py-2 bg-white ring-1 ring-cyan-800 rounded-4xl flex justify-center items-center">
                 <h3 className="mr-4 font-medium">Watch live on</h3>
@@ -74,28 +78,9 @@ const HomePage = () => {
           />
         </div>
         <div className="events flex justify-center items-center w-full max-w-1/2 gap-10 pt-20">
-          <div class="box">
-            <button class="visitbutton">Visit Now</button>
-            {/* <div class="snowfall">
-            <span style={{-i: 12}} className="snowflake" ></span>
-          <span style={{-i: 31}} className="snowflake" ></span>
-          <span style={{-i: 18}} className="snowflake" ></span>
-          <span style={{-i: 9}} className="snowflake" ></span>
-          <span style={{-i: 41}} className="snowflake" ></span>
-          <span style={{-i: 22}} className="snowflake" ></span>
-          <span style={{-i: 16}} className="snowflake" ></span>
-          <span style={{-i: 35}} className="snowflake" ></span>
-          <span style={{-i: 9}} className="snowflake" ></span>
-          <span style={{-i: 14}} className="snowflake" ></span>
-          <span style={{-i: 19}} className="snowflake" ></span>
-          <span style={{-i: 6}} className="snowflake" ></span>
-          <span style={{-i: 53}} className="snowflake" ></span>
-          <span style={{-i: 26}} className="snowflake" ></span>
-          <span style={{-i: 34}} className="snowflake" ></span>
-          <span style={{-i: 18}} className="snowflake" ></span>
-          <span style={{-i: 8}} className="snowflake" ></span>
-            </div> */}
-          </div>
+          <button class="border-3 font-medium px-6 py-2 rounded-4xl shadow-lg">
+            Visit Now
+          </button>
         </div>
       </section>
     </div>

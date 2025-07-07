@@ -43,7 +43,7 @@ const Countdown = () => {
                 <span>31</span>
               </div>
             </div>
-            <p>day</p>
+            <p>Days</p>
           </div>
           <span className="colon">:</span>
           <div className="item">
@@ -76,7 +76,7 @@ const Countdown = () => {
                 <span>24</span>
               </div>
             </div>
-            <p>hour</p>
+            <p>Hours</p>
           </div>
           <span className="colon">:</span>
           <div className="item">
@@ -145,7 +145,7 @@ const Countdown = () => {
                 <span>60</span>
               </div>
             </div>
-            <p>min</p>
+            <p>Minutes</p>
           </div>
           <span className="colon">:</span>
           <div className="item">
@@ -214,7 +214,7 @@ const Countdown = () => {
                 <span>60</span>
               </div>
             </div>
-            <p>sec</p>
+            <p>Seconds</p>
           </div>
         </div>
       </div>
@@ -223,149 +223,38 @@ const Countdown = () => {
 };
 
 const StyledWrapper = styled.div`
-  /*the style has written with Scss and*/
-  /* files on my GitHub👾 check the pio*/
-
   .black-friday-component {
     --count: 0;
-    --days: 31;
-    --hours: 24;
-    --minutes: 60;
+    --days: 3;
+    --hours: 6;
+    --minutes: 36;
     --seconds: 60;
     flex-direction: column;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    width: -moz-fit-content;
-    width: fit-content;
     margin: auto;
     padding: 0 40px;
   }
-  .black-friday-component .coupon {
-    border-radius: 12px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #654bff;
-    scale: 0.7;
-    transform-origin: bottom center;
-  }
-  .black-friday-component .coupon:hover .content h3 > span {
-    animation: jump 0.15s ease-out 1 normal both;
-  }
-  .black-friday-component .coupon:hover .content h3 > span:nth-of-type(1) {
-    animation-delay: 0.03s;
-  }
-  .black-friday-component .coupon:hover .content h3 > span:nth-of-type(2) {
-    animation-delay: 0.06s;
-  }
-  .black-friday-component .coupon:hover .content h3 > span:nth-of-type(3) {
-    animation-delay: 0.09s;
-  }
-  .black-friday-component .coupon:hover .content h3 > span:nth-of-type(4) {
-    animation-delay: 0.12s;
-  }
-  .black-friday-component .coupon:hover .content h3 > span:nth-of-type(5) {
-    animation-delay: 0.15s;
-  }
-  .black-friday-component .coupon:hover .content h3 > span:nth-of-type(6) {
-    animation-delay: 0.18s;
-  }
-  .black-friday-component .coupon:hover .content h3 > span:nth-of-type(7) {
-    animation-delay: 0.21s;
-  }
-  .black-friday-component .coupon:hover .content h3 > span:nth-of-type(8) {
-    animation-delay: 0.24s;
-  }
-  .black-friday-component .coupon:hover .content h3 > span:nth-of-type(9) {
-    animation-delay: 0.27s;
-  }
-  .black-friday-component .coupon:hover .content h3 > span:nth-of-type(10) {
-    animation-delay: 0.3s;
-  }
-  .black-friday-component .coupon:hover .content h3 > span:nth-of-type(11) {
-    animation-delay: 0.33s;
-  }
-  .black-friday-component .coupon:hover .content h3 > span:nth-of-type(12) {
-    animation-delay: 0.36s;
-  }
-  .black-friday-component .coupon .box {
-    height: 100%;
-    width: 130px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    padding: 1rem;
-  }
-  .black-friday-component .coupon .box span {
-    display: block;
-    font-weight: bold;
-    font-size: 1.8rem;
-  }
-  .black-friday-component .coupon .diver {
-    display: block;
-    width: 0px;
-    height: 160px;
-    border: 3px dashed transparent;
-    border-right-color: #654bff;
-  }
-  .black-friday-component .coupon .content {
-    padding: 1rem;
-    flex: 1;
-    color: #fff;
-    width: 330px;
-    height: 100%;
-  }
-  .black-friday-component .coupon .content h3 {
-    font-weight: 600;
-    font-size: 2rem;
-    height: 34px;
-    align-items: center;
-    display: flex;
-    justify-content: flex-start;
-    margin-bottom: 1rem;
-  }
-  .black-friday-component .coupon .content h3 span.end {
-    width: 30px;
-  }
-  .black-friday-component .coupon .content p {
-    font-weight: 400;
-    font-style: normal;
-    color: #959595;
-    font-size: 1rem;
-    line-height: 1.25rem;
-  }
-  .black-friday-component .coupon .content p a {
-    font-style: italic;
-    color: #654bff;
-    text-transform: capitalize;
-    word-spacing: 0.03rem;
-    font-weight: bolder;
-    text-decoration: underline;
-    text-underline-offset: 0.05rem;
-    text-decoration-color: #654bff;
-  }
+
   .black-friday-component .timer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 0rem;
     overflow: hidden;
-    width: calc(244px + 0rem);
+    width: calc(344px + 0px);
     text-align: center;
   }
   .black-friday-component .timer .colon {
     width: 8px;
-    color: #fff;
+    color: #000;
     font-size: 2rem;
   }
   .black-friday-component .timer .item {
     text-align: center;
-    width: 55px;
+    width: 75px;
     height: fit-content;
   }
   .black-friday-component .timer .item .days,
@@ -375,7 +264,11 @@ const StyledWrapper = styled.div`
     text-align: center;
     width: 55px;
     overflow: hidden;
-    height: 40px;
+    height: 50px;
+    padding: 0 14px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
   }
   .black-friday-component .timer .item .day,
   .black-friday-component .timer .item .hour,
@@ -393,7 +286,7 @@ const StyledWrapper = styled.div`
   .black-friday-component .timer .item .min span,
   .black-friday-component .timer .item .sec span {
     height: 40px;
-    color: #fff;
+    color: #000;
     font-size: 2rem;
     display: inline-block;
   }
@@ -418,7 +311,7 @@ const StyledWrapper = styled.div`
   }
   .black-friday-component .timer .item p {
     text-align: center;
-    color: #fff;
+    color: #000;
     font-size: 1.2rem;
     font-weight: 400;
   }
