@@ -13,7 +13,7 @@ const HomePage = () => {
             alt="gp one logo"
           />
           <div className="CountDown text-center pt-6">
-            <h2 className="text-3xl py-2">Event goes live in</h2>
+            <h2 className="text-3xl py-4">Event goes live in</h2>
             <div className="text-black">
               {/* <Countdown /> */}
               <NewCountdown />
@@ -21,12 +21,12 @@ const HomePage = () => {
             <div className="Watch  flex justify-center ">
               <div className="px-10 py-2 bg-white ring-1 ring-cyan-800 rounded-4xl flex justify-center items-center">
                 <h3 className="mr-4 font-medium">Watch live on</h3>
-                <button>
-                  <img src="/youtube-logo-hd.png" alt="youtube-logo-hd.png" />
-                </button>
-                <button>
-                  <img src="/Facebook-logo.png" alt="Facebook-logo.png" />
-                </button>
+                <a href="#">
+                  <img className="w-10" src="/youtube-logo-hd.png" alt="youtube-logo-hd.png" />
+                </a>
+                <a href="#">
+                  <img className="w-15" src="/Facebook-logo.png" alt="Facebook-logo.png" />
+                </a>
               </div>
             </div>
           </div>
