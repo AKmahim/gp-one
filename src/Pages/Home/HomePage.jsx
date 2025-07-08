@@ -55,13 +55,13 @@ const HomePage = () => {
         </div>
         <div className="events flex lg:flex-row flex-col lg:gap-20 gap-6 font-bold text-2xl pt-32">
           <div className="eventCardWraper bg-gradient-to-tr from-gray-200 to-transparent bg-white flex flex-col items-center p-1 rounded-3xl">
-            <div className="eventCard bg-white flex flex-col items-center px-20 py-16 ">
+            <div className="eventCard bg-white flex flex-col items-center lg:px-20 px-12 lg:py-16 py-10 ">
               <h3 className="mb-6 font-medium">Event Keynote</h3>
               <button className="btn-grad text-lg ">Stay Tuned</button>
             </div>
           </div>
           <div className="eventCardWraper bg-gradient-to-tr from-gray-12`00 to-transparent bg-white flex flex-col items-center p-1 rounded-3xl">
-            <div className="eventCard bg-white flex flex-col items-center px-20 py-16 ">
+            <div className="eventCard bg-white flex flex-col items-center lg:px-20 px-12 lg:py-16 py-10">
               <h3 className="mb-6 font-medium">New Plaltforms</h3>
               <button className="btn-grad text-lg ">Stay Tuned</button>
             </div>
