@@ -135,16 +135,16 @@
   margin: 0 auto;
   flex-direction: row;
   justify-content: space-between;
-  /* align-items: center; */
+  /* align-items: center; */ 
   gap: 0rem;
   overflow: hidden;
-  width: 400px;
+  /* width: 400px; */
   text-align: center;
 }
 .timer .colon {
   /* width: 8px; */
   padding: 0 10px;
-  padding-top: 10px;
+  padding-top: 10px; 
 
   color: #2140D5;
   font-size: 36px;

@@ -1,35 +1,42 @@
 import React from "react";
 import Countdown from "../../components/Countdown";
 import NewCountdown from "../../components/NewCountdown";
-import '../../assets/fonts/fonts.css'; // Import custom fonts
-import './HomePage.css'; // Import custom styles for HomePage
-
+import "../../assets/fonts/fonts.css"; // Import custom fonts
+import "./HomePage.css"; // Import custom styles for HomePage
 
 const HomePage = () => {
   return (
-    <div  className="home-page font-telenor">
-      <section className="bg-[url('/HeaderBGBack.jpg')] bg-cover bg-center py-10 flex flex-col items-center justify-center">
-        <div className="headerBg flex flex-col justify-center rounded-4xl py-20 px-12 w-full max-w-7xl shadow inset-shadow-black ">
+    <div className="home-page font-telenor">
+      <section className="bg-[url('/HeaderBGBack.jpg')] bg-cover bg-center md:py-10 py-6 md:px-14 px-4 flex flex-col items-center justify-center">
+        <div className="headerBg flex flex-col justify-center rounded-4xl py-20 md:px-12 px-4 w-full max-w-7xl shadow inset-shadow-black ">
           <img
-            className="w-96 mx-auto"
+            className="lg:w-96 md:w-80 w-60 mx-auto"
             src="/GP_ONE_Logo2.png"
             alt="gp one logo"
           />
           <div className="CountDown text-center pt-6">
-            <h2 className="text-3xl py-4">Event goes live in</h2>
+            <h2 className="lg:text-3xl text-xl py-4">Event goes live in</h2>
             <div className="text-black">
               {/* <Countdown /> */}
               <NewCountdown />
             </div>
             {/* Watch live on link list  */}
             <div className="Watch  flex justify-center ">
-              <div className="px-10 py-2 bg-white ring-1 ring-cyan-800 rounded-4xl flex justify-center items-center ">
+              <div className="lg:px-10 px-6 py-2 bg-white ring-1 ring-cyan-800 rounded-4xl flex justify-center items-center ">
                 <h3 className="mr-4 font-medium">Watch live on</h3>
                 <a href="#" className="cursor-pointer">
-                  <img className="w-10" src="/youtube-logo-hd.png" alt="youtube-logo-hd.png" />
+                  <img
+                    className="lg:w-10 w-8"
+                    src="/youtube-logo-hd.png"
+                    alt="youtube-logo-hd.png"
+                  />
                 </a>
                 <a href="#" className="cursor-pointer">
-                  <img className="w-15" src="/Facebook-logo.png" alt="Facebook-logo.png" />
+                  <img
+                    className="lg:w-12 w-10"
+                    src="/Facebook-logo.png"
+                    alt="Facebook-logo.png"
+                  />
                 </a>
               </div>
             </div>
@@ -37,25 +44,16 @@ const HomePage = () => {
         </div>
       </section>
       <section className="bg-[url('/section2.jpg')] bg-cover bg-top py-40 flex flex-col items-center justify-center">
-        <div className="info">
-          <h2 className="text-5xl text-center font-bold mb-4">
+        <div className="info px-4">
+          <h2 className="lg:text-5xl text-3xl text-center font-bold mb-4">
             Beyond connection, in One Ecosystem
           </h2>
-          <p className="text-3xl max-w-2xl mx-auto text-center leading-12">
+          <p className="lg:text-3xl text-lg max-w-2xl mx-auto text-center leading-12">
             Discover ideas, experiences and solutions that push the boundaries
             of what’s possible. Join us as innovation takes a new flight.
           </p>
         </div>
-        <div className="events flex gap-20 font-bold text-2xl pt-32">
-          {/* Gradient border layer */}
-          {/* <div className="relative rounded-3xl  eventCard bg-white flex flex-col items-center rounded-3xl z-10">
-            <div className="absolute inset-0 rounded-3xl p-[2px] bg-gradient-to-tr from-gray-400 to-transparent z-[-1]"></div>
-            <div className="bg-white w-full h-full px-20 py-16">
-              <h3 className="mb-6 font-medium">Event Keynote</h3>
-              <button className="btn-grad text-lg">Stay Tuned</button>
-            </div>
-          </div> */}
-
+        <div className="events flex lg:flex-row flex-col lg:gap-20 gap-6 font-bold text-2xl pt-32">
           <div className="eventCardWraper bg-gradient-to-tr from-gray-200 to-transparent bg-white flex flex-col items-center p-1 rounded-3xl">
             <div className="eventCard bg-white flex flex-col items-center px-20 py-16 ">
               <h3 className="mb-6 font-medium">Event Keynote</h3>
@@ -69,14 +67,14 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="events flex justify-center items-center w-full max-w-1/2 gap-10 pt-20">
+        <div className="events flex justify-center items-center w-full md:max-w-1/2 max-w-2/3 gap-10 pt-20">
           <img
             className="flex-1 w-1/2"
             src="/GP_ONE_Logo.png"
             alt="GP_ONE_Logo"
           />
           <img
-            className="flex-1 w-1/4 p-10"
+            className="flex-1 w-1/4 md:p-10 p-2"
             src="/grameenphone_logo.png"
             alt="grameenphone_logo"
           />
@@ -89,9 +87,10 @@ const HomePage = () => {
             <span className="absolute inset-0 rounded-full p-[3px] bg-gradient-to-r from-[#172BD1] to-[#580084] group-hover:from-[#580084] group-hover:to-[#172BD1]">
               <span className="block h-full w-full rounded-full bg-white group-hover:bg-gray-50"></span>
             </span>
-            <span className="relative z-10 text-[#000040] text-xl">Visit now</span>
+            <span className="relative z-10 text-[#000040] text-xl">
+              Visit now
+            </span>
           </button>
-
         </div>
       </section>
     </div>

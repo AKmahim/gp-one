@@ -28,7 +28,7 @@ const NewCountdown = () => {
   }, []);
 
   return (
-    <div className="timer mb-4 pb-10">
+    <div className="timer mb-4 pb-10 w-80 md:w-96">
       <div className="item">
         <div className="days">
           <div className="day">
