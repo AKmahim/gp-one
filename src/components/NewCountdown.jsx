@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const TARGET_DATE = new Date(2025, 6, 10, 17, 30, 0); // July is month 6 (0-indexed)
+const TARGET_DATE = new Date(2025, 6, 10, 17, 0, 0); // July is month 6 (0-indexed)
 
 const getTimeLeft = () => {
   const now = new Date();
