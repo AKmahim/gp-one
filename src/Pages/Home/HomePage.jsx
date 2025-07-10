@@ -14,33 +14,20 @@ const HomePage = () => {
             src="/GP_ONE_Logo2.png"
             alt="gp one logo"
           />
-          <div className="CountDown text-center pt-6">
-            <h2 className="lg:text-3xl text-xl py-4">Event goes live in</h2>
-            <div className="text-black">
-              {/* <Countdown /> */}
-              <NewCountdown />
-            </div>
-            {/* Watch live on link list  */}
-            <div className="Watch  flex justify-center ">
-              <div className="lg:px-10 px-6 py-2 bg-white ring-1 ring-cyan-800 rounded-4xl flex justify-center items-center ">
-                <h3 className="mr-4 font-medium">Watch live on</h3>
-                <a href="https://youtube.com/live/dkzlY-0btKE?feature=share" className="cursor-pointer">
-                  <img
-                    className="lg:w-10 w-8"
-                    src="/youtube-logo-hd.png"
-                    alt="youtube-logo-hd.png"
-                  />
-                </a>
-                <a href="#" className="cursor-pointer">
-                  <img
-                    className="lg:w-12 w-10"
-                    src="/Facebook-logo.png"
-                    alt="Facebook-logo.png"
-                  />
-                </a>
-              </div>
-            </div>
+          {/* youtube container  */}
+          <div className="CountDown text-center pt-6 flex justify-center">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/dkzlY-0btKE?si=4d4wSVo1VYM6DlAc"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
+          
         </div>
       </section>
       <section className="bg-[url('/section2.jpg')] bg-cover bg-top py-40 flex flex-col items-center justify-center">
