@@ -24,7 +24,7 @@ const HomePage = () => {
             <div className="Watch  flex justify-center ">
               <div className="lg:px-10 px-6 py-2 bg-white ring-1 ring-cyan-800 rounded-4xl flex justify-center items-center ">
                 <h3 className="mr-4 font-medium">Watch live on</h3>
-                <a href="#" className="cursor-pointer">
+                <a href="https://youtube.com/live/dkzlY-0btKE?feature=share" className="cursor-pointer">
                   <img
                     className="lg:w-10 w-8"
                     src="/youtube-logo-hd.png"
